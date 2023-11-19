@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300&family=Noto+Sans+TC:wght@100;300;500&family=Rubik:wght@300&display=swap");
+
+@font-face {
+  font-family: "chenyuluoyan";
+  src: url("https://github.com/Chenyu-otf/chenyuluoyan_thin/main/path/to/ChenYuluoyan-Thin-Monospaced.ttf")
+    format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Emoji", "chenyuluoyan", sans-serif;
+  place-items: center;
+  background-image: linear-gradient(
+      135deg,
+      hsla(0deg, 91%, 65%, 0.5) 0%,
+      hsla(112deg, 79%, 77%, 0.5) 100%
+    ),
+    url("https://free-paper-texture.com/p/p0427/p0427_m.jpg");
+}
