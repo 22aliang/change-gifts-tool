@@ -18,8 +18,8 @@ function Card() {
 
   return (
     <>
-      <h1 className="text-5xl text-center mb-4">
-        請抽選要準備 <span className="text-red font-bold">誰</span> 的禮物 !
+      <h1 className="text-2xl text-center mb-5">
+        請抽選要準備 <span className="text-red font-bold">__</span> 的 🎁
       </h1>
       <div
         className={`card-container grid grid-cols-3 gap-4 text-center ${

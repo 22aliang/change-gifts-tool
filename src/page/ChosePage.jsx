@@ -7,9 +7,9 @@ function ChosePage() {
 
   return (
     <div>
-      <h1 className="text-6xl text-center">
-        你要幫 <span className="text-red font-bold">{cardContent}</span>{" "}
-        準備禮物
+      <h1 className="text-3xl text-center">
+        恭喜🎉 你要幫 <span className="text-red font-bold">{cardContent}</span>{" "}
+        準備 🎁 喔 ! 🥰
       </h1>
     </div>
   );
