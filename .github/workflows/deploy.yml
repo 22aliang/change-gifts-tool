@@ -21,7 +21,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -35,6 +34,9 @@ jobs:
         with:
           node-version: 18
           cache: "npm"
+      - name: Create .env file
+        run: |
+          echo "${{ secrets.ENV_FILE }}" > .env
       - name: Install dependencies
         run: npm install
       - name: Build
@@ -44,7 +46,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # Upload dist repository
           path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
