@@ -11,6 +11,12 @@ function Card() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const isPageLocked = localStorage.getItem("isPageLocked");
+    if (isPageLocked === "true") {
+      navigate("/newpage"); // 如果頁面已被鎖定，導航到 ChosePage 或其他頁面
+      return;
+    }
+
     const fetchData = async () => {
       try {
         const participantsRef = database.ref("participants");
