@@ -1,5 +1,5 @@
 .card-container {
-  perspective: 1000px; /* 調整這個值以獲得最佳效果 */
+  perspective: 1000px;
 }
 
 .card {
@@ -9,16 +9,16 @@
   background-image: linear-gradient(
       135deg,
       hsla(0, 0%, 100%, 0.9) 0%,
-      hsla(0, 0%, 100%, 0.2) 100% /* 透明度為 0.5 */
+      hsla(0, 0%, 100%, 0.2) 100%
     ),
     url("https://free-paper-texture.com/p/p0427/p0427_m.jpg");
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 3px; /* 圓角邊框 */
+  border-radius: 3px;
   padding: 20px;
   color: #551f00;
   transform-style: preserve-3d;
   transform-origin: center;
-  transition: transform 0.5s; /* 平滑過渡效果 */
+  transition: transform 0.5s;
   overflow: hidden;
   cursor: pointer;
 }
@@ -32,7 +32,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 5em; /* 調整雪花大小 */
+  font-size: 5em;
   color: rgb(45, 136, 184);
   border: rgb(45, 136, 184) 1.25px solid;
   transform: translate(-50%, -50%);
@@ -67,7 +67,7 @@
 
 .fade-transition {
   transition: opacity 0.5s ease-in-out;
-  opacity: 0; /* 初始為完全透明 */
+  opacity: 0;
 }
 
 .fade-in {
